@@ -54,7 +54,7 @@ export default function BottomNav() {
 
         />
         <BottomNavigationAction
-          label="Event Details"
+          label="Event"
           value="event"
           icon={<GiTimeSynchronization fontSize="27px" />}
           component={Link}

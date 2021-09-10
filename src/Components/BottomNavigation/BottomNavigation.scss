@@ -13,3 +13,12 @@
         background-color: #968984;
     }
 }
+
+@media(max-width: 500px){
+    .bottom-nav{
+        .MuiBottomNavigationAction-root.MuiBottomNavigationAction-iconOnly{
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
