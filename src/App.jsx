@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BottomNavigation from "./Components/BottomNavigation/BottomNavigation";
 import "./App.scss";
-import { Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Audio from "./Components/Audio/Audio";
 import Cover from "./Components/Cover/Cover";
@@ -31,9 +31,11 @@ class App extends Component {
       return (
         <div className="app">
           <div className="section">
-            <Switch>
-              <Route path="/" component={Home} exact />
-            </Switch>
+            <HashRouter basename="/">
+              <Switch>
+                <Route path="/" component={Home} exact />
+              </Switch>
+            </HashRouter>
             <div className="audio">
               <Audio />
             </div>
