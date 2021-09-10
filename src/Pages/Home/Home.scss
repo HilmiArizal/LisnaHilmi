@@ -1,0 +1,32 @@
+.home {
+  background-image: 
+    url(../../Assets/Images/home.jpeg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .text{
+      font-family: 'Poppins', sans-serif;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 7%;
+      left: 50%;
+      text-align: center;
+      color: #fff;
+      .invitation{
+        font-size: 14px;
+        font-style: italic;
+      }
+      .name{
+        font-family: 'Kaushan Script', cursive;
+          font-size: 48px;
+          font-weight: 500;
+          padding: 0;
+      }
+      .date{
+          font-size: 14px;
+          font-style: italic;
+      }
+  }
+}
