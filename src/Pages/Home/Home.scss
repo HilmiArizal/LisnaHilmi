@@ -9,7 +9,7 @@
       font-family: 'Poppins', sans-serif;
       position: absolute;
       transform: translate(-50%, -50%);
-      bottom: 7%;
+      top: 60%;
       left: 50%;
       text-align: center;
       color: #fff;
@@ -27,5 +27,11 @@
           font-size: 14px;
           font-style: italic;
       }
+  }
+}
+
+@media(max-width:500px){
+  .home{
+      height: 90vh;
   }
 }
