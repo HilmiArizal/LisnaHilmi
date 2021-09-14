@@ -4,7 +4,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import { AiOutlineHome } from "react-icons/ai";
-import { GiLinkedRings, GiTimeSynchronization, GiPhotoCamera, GiConfirmed } from "react-icons/gi";
+import {
+  GiLinkedRings,
+  GiTimeSynchronization,
+  GiPhotoCamera,
+  GiConfirmed,
+} from "react-icons/gi";
 import "./BottomNavigation.scss";
 
 const useStyles = makeStyles({
@@ -62,7 +67,6 @@ export default function BottomNav() {
           spy={true}
           smooth={true}
           activeClass="active"
-
         />
         <BottomNavigationAction
           label="Gallery"
@@ -73,18 +77,16 @@ export default function BottomNav() {
           spy={true}
           smooth={true}
           activeClass="active"
-
         />
         <BottomNavigationAction
           label="R.S.V.P"
           value="rsvp"
           icon={<GiConfirmed fontSize="23px" />}
           component={Link}
-          to="section-rsvp"
+          to="section-reservation"
           spy={true}
           smooth={true}
           activeClass="active"
-
         />
       </BottomNavigation>
     </div>

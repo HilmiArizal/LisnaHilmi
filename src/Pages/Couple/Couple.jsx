@@ -67,7 +67,7 @@ class Couple extends Component {
               <div className="col-md-6">
                 <div className="female">
                   <div className="text">
-                    <div className="name">Lisna Astriani, S.E</div>
+                    <div className="name">Lisna Astriani, S.E., CTT</div>
                     <div className="as">Putri Tercinta</div>
                     <div className="son">
                       <div className="father">Bapak Asep Suhardi</div>

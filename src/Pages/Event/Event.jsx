@@ -62,9 +62,9 @@ class Event extends Component {
                     <div className="modal-body">
                       <iframe
                         title="maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.540321531671!2d107.57695771495106!3d-6.945406994982046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8b40e363c6b%3A0x4228645d0ad7b9b2!2sSarenOne%20Office!5e0!3m2!1sid!2sid!4v1631610356023!5m2!1sid!2sid"
-                        width="400"
-                        height="400"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8518951604037!2d107.56590921477279!3d-6.90830689500832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5cc40c7e79d%3A0xe16d8bdc6a152374!2sHotel%20Endah%20Parahyangan!5e0!3m2!1sid!2sid!4v1631616127189!5m2!1sid!2sid"
+                        width="100%"
+                        height="300"
                         allowfullscreen=""
                         loading="lazy"
                       ></iframe>
