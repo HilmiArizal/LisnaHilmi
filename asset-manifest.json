@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/LisnaHilmi/static/css/main.fe43189a.chunk.css",
+    "main.css": "/LisnaHilmi/static/css/main.4217e06f.chunk.css",
     "main.js": "/LisnaHilmi/static/js/main.2b40be8a.chunk.js",
     "main.js.map": "/LisnaHilmi/static/js/main.2b40be8a.chunk.js.map",
     "runtime-main.js": "/LisnaHilmi/static/js/runtime-main.be137c7e.js",
@@ -10,7 +10,7 @@
     "static/js/3.218f82af.chunk.js": "/LisnaHilmi/static/js/3.218f82af.chunk.js",
     "static/js/3.218f82af.chunk.js.map": "/LisnaHilmi/static/js/3.218f82af.chunk.js.map",
     "index.html": "/LisnaHilmi/index.html",
-    "static/css/main.fe43189a.chunk.css.map": "/LisnaHilmi/static/css/main.fe43189a.chunk.css.map",
+    "static/css/main.4217e06f.chunk.css.map": "/LisnaHilmi/static/css/main.4217e06f.chunk.css.map",
     "static/js/2.0b39db4d.chunk.js.LICENSE.txt": "/LisnaHilmi/static/js/2.0b39db4d.chunk.js.LICENSE.txt",
     "static/media/Its-you.5acc7696.mp3": "/LisnaHilmi/static/media/Its-you.5acc7696.mp3",
     "static/media/App.scss": "/LisnaHilmi/static/media/bg-wedding.b683eb0f.jpeg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.be137c7e.js",
     "static/js/2.0b39db4d.chunk.js",
-    "static/css/main.fe43189a.chunk.css",
+    "static/css/main.4217e06f.chunk.css",
     "static/js/main.2b40be8a.chunk.js"
   ]
 }
