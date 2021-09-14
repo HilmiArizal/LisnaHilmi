@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Couple from "../Couple/Couple";
+import Event from "../Event/Event";
 import "./Home.scss";
 
 class Home extends Component {
@@ -26,6 +27,10 @@ class Home extends Component {
         <div id="section-home">{this.renderHome()}</div>
         <div id="section-couple">
           <Couple />
+        </div>
+
+        <div id="section-event">
+          <Event />
         </div>
       </div>
     );
