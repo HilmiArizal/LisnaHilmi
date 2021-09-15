@@ -3,7 +3,7 @@
   min-height: 100vh;
   .card {
     padding: 2em 0;
-    background-color: #fff;
+    background-color: transparent;
     .image-bismillah {
       margin: auto;
       width: 200px;
@@ -28,6 +28,7 @@
         width: 60px;
         font-size: 20px;
         background-color: #fff;
+        border: 1px solid #968984;
         position: absolute;
         top: 35%;
         left: 50%;
@@ -101,8 +102,15 @@
     }
     .flower{
       .image{
-        background-color: #968984;
         width: 100px;
+        margin: auto;
+        img{
+          width: 100%;
+        }
+      }
+      .image-2{
+        width: 80px;
+        padding-top: 10px;
         margin: auto;
         img{
           width: 100%;

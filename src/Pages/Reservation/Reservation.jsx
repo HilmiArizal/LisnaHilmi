@@ -77,8 +77,8 @@ class Reservation extends Component {
   render() {
     return (
       <div className="reservation">
-        <div className="title">Konfirmasi kehadiran!</div>
-        <div className="card">
+        <div className="title">Konfirmasi kehadiran</div>
+        <div className="card-form">
           <form
             className="form"
             onSubmit={this.onReservation}
@@ -93,7 +93,7 @@ class Reservation extends Component {
               />
             </div>
             <div className="mb-3">
-              <label>Ucapan :</label>
+              <label>Ucapan dan Do'a :</label>
               <textarea
                 type="text"
                 className="form-control form-control-sm"
@@ -130,7 +130,7 @@ class Reservation extends Component {
                   Saya akan hadir
                 </div>
               </div>
-              <div className="d-flex">
+              {/* <div className="d-flex">
                 <div>
                   <input
                     type="radio"
@@ -143,7 +143,7 @@ class Reservation extends Component {
                 <div style={{ marginLeft: "10px", fontSize: "14px" }}>
                   Saya masih ragu
                 </div>
-              </div>
+              </div> */}
               <div className="d-flex">
                 <div>
                   <input

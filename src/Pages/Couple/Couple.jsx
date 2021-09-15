@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Bismillah from "../../Assets/Images/bismillah.png";
 import AvatarMale from "../../Assets/Images/male.png";
 import AvatarFemale from "../../Assets/Images/female.png";
-import Flower from "../../Assets/Images/flower.png";
-import Flower2 from "../../Assets/Images/flower-2.png";
+import Flower from "../../Assets/Images/leaf-up.png";
+import Flower2 from "../../Assets/Images/leaf-down.png";
 import { FaHeart } from "react-icons/fa";
 import "./Couple.scss";
 
@@ -106,7 +106,7 @@ class Couple extends Component {
             <div className="date">5 Desember 2021</div>
           </div>
           <div className="flower">
-            <div className="image">
+            <div className="image-2">
               <img src={Flower2} alt="img-flower" />
             </div>
           </div>

@@ -3,6 +3,7 @@ import Couple from "../Couple/Couple";
 import Event from "../Event/Event";
 import Gallery from "../Gallery/Gallery";
 import Reservation from "../Reservation/Reservation";
+import Wish from "../Wish/Wish";
 import "./Home.scss";
 
 class Home extends Component {
@@ -40,6 +41,10 @@ class Home extends Component {
 
         <div id="section-reservation">
           <Reservation/>
+        </div>
+
+        <div id="section-reservation">
+          <Wish/>
         </div>
       </div>
     );
