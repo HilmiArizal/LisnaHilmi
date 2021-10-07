@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Reservation.scss";
+import Axios from "axios";
+import { API_URL } from "../../Service/API_URL";
 
 class Reservation extends Component {
   constructor(props) {
@@ -30,7 +32,7 @@ class Reservation extends Component {
     }
   };
 
-  onReservation = (e) => {
+  onReservation = async (e) => {
     e.preventDefault();
     const {
       name,
@@ -41,25 +43,35 @@ class Reservation extends Component {
       openSession,
     } = this.state;
 
-    // const dataReservation = Object();
-    // dataReservation.name = name;
-    // dataReservation.sentence = sentence;
-    // dataReservation.friend = friend;
-    // dataReservation.reservation = reservation;
-    // dataReservation.session = openSession ? session : '-';
+    const dataReservation = Object();
+    dataReservation.name = name;
+    dataReservation.wish = sentence;
+    dataReservation.friend = friend;
+    dataReservation.reservation = reservation;
+    dataReservation.session = openSession ? session : "-";
 
-    let url = `http://wa.me/${
-      friend === "hilmi" ? "+6285156371589" : "+628987481821"
-    }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
-      openSession ? session : "-"
-    }`;
-
-    if (name && sentence && friend && reservation && session) {
-      window.open(url, "_blank").focus();
-      this.onClearForm();
-    } else {
-      alert("Isi data dengan benar");
+    if (!session) {
+      alert("Anda belum memilih sesi");
     }
+    try {
+      const res = await Axios.post(API_URL + "wish/postWish", dataReservation);
+      console.log(res.data);
+    } catch (err) {
+      console.log(err);
+    }
+
+    // let url = `http://wa.me/${
+    //   friend === "hilmi" ? "+6285156371589" : "+628987481821"
+    // }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
+    //   openSession ? session : "-"
+    // }`;
+
+    // if (name && sentence && friend && reservation && session) {
+    //   window.open(url, "_blank").focus();
+    //   this.onClearForm();
+    // } else {
+    //   alert("Isi data dengan benar");
+    // }
   };
 
   onClearForm = () => {
@@ -130,20 +142,6 @@ class Reservation extends Component {
                   Saya akan hadir
                 </div>
               </div>
-              {/* <div className="d-flex">
-                <div>
-                  <input
-                    type="radio"
-                    name="radio-group"
-                    value="ragu"
-                    onChange={(e) => this.onChangeReservation(e.target.value)}
-                    defaultChecked
-                  />
-                </div>
-                <div style={{ marginLeft: "10px", fontSize: "14px" }}>
-                  Saya masih ragu
-                </div>
-              </div> */}
               <div className="d-flex">
                 <div>
                   <input
@@ -168,15 +166,9 @@ class Reservation extends Component {
                   <option selected hidden>
                     1 / 2 / 3 ?
                   </option>
-                  <option value="Sesi 1 pukul 10:00 - 11:00">
-                    Sesi 1 pukul 10:00 - 11:00
-                  </option>
-                  <option value="Sesi 2 pukul 11:00 - 12:00">
-                    Sesi 2 pukul 11:00 - 12:00
-                  </option>
-                  <option value="Sesi 3 pukul 12:00 - 13:00">
-                    Sesi 3 pukul 12:00 - 13:00
-                  </option>
+                  <option value="1">Sesi 1 pukul 10:00 - 11:00</option>
+                  <option value="2">Sesi 2 pukul 11:00 - 12:00</option>
+                  <option value="3">Sesi 3 pukul 12:00 - 13:00</option>
                 </select>
               </div>
             ) : (
