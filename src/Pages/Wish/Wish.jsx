@@ -40,6 +40,12 @@ class Wish extends Component {
       <div className="wish-pray">
         <div className="title">Ucapan &amp; Do'a</div>
         <div className="wish-card">
+          <div className="icon-left" onClick={this.onPrevious}>
+            <GrPrevious />
+          </div>
+          <div className="icon-right" onClick={this.onNext}>
+            <GrNext />
+          </div>
           <div className="content">
             {this.state.dataWish.map((item, index) => {
               let position =
@@ -50,17 +56,11 @@ class Wish extends Component {
                   : "prevCard";
               return (
                 <div className={position} key={index}>
-                  <div className="icon-left" onClick={this.onPrevious}>
-                    <GrPrevious />
+                  <div className="friend-name">
+                    {this.state.index === index ? item.name : ""}
                   </div>
-                  <div className="row">
-                    <div className="col-sm">
-                      <div className="friend-name">{this.state.index === index ? item.name : ''}</div>
-                      <div className="friend-wish">{this.state.index === index ? item.wish : ''}</div>
-                    </div>
-                  </div>
-                  <div className="icon-right" onClick={this.onNext}>
-                    <GrNext />
+                  <div className="friend-wish">
+                    {this.state.index === index ? item.wish : ""}
                   </div>
                 </div>
               );
