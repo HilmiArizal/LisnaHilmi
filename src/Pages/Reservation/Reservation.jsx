@@ -60,18 +60,18 @@ class Reservation extends Component {
       console.log(err);
     }
 
-    // let url = `http://wa.me/${
-    //   friend === "hilmi" ? "+6285156371589" : "+628987481821"
-    // }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
-    //   openSession ? session : "-"
-    // }`;
+    let url = `http://wa.me/${
+      friend === "hilmi" ? "+6285156371589" : "+628987481821"
+    }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
+      openSession ? session : "-"
+    }`;
 
-    // if (name && sentence && friend && reservation && session) {
-    //   window.open(url, "_blank").focus();
-    //   this.onClearForm();
-    // } else {
-    //   alert("Isi data dengan benar");
-    // }
+    if (name && sentence && friend && reservation && session) {
+      window.open(url, "_blank").focus();
+      this.onClearForm();
+    } else {
+      alert("Isi data dengan benar");
+    }
   };
 
   onClearForm = () => {
