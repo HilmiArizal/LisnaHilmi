@@ -52,12 +52,16 @@ class Reservation extends Component {
 
     if (!session) {
       alert("Anda belum memilih sesi");
-    }
-    try {
-      const res = await Axios.post(API_URL + "wish/postWish", dataReservation);
-      console.log(res.data);
-    } catch (err) {
-      console.log(err);
+    } else {
+      try {
+        const res = await Axios.post(
+          API_URL + "wish/postWish",
+          dataReservation
+        );
+        console.log(res.data);
+      } catch (err) {
+        console.log(err);
+      }
     }
 
     let url = `http://wa.me/${
@@ -93,7 +97,7 @@ class Reservation extends Component {
         <div className="card-form">
           <form
             className="form"
-            onSubmit={this.onReservation}
+            // onSubmit={this.onReservation}
             id="formReservation"
           >
             <div className="mb-3">
@@ -185,7 +189,56 @@ class Reservation extends Component {
                 </select>
               </div>
             )}
-            <button className="btn btn-primary btn-sm">KIRIM SEKARANG</button>
+            <button
+              className="btn btn-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              KIRIM SEKARANG
+            </button>
+            <div
+              className="modal fade"
+              id="exampleModal2"
+              tabIndex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLabel">
+                      Ucapan mu ingin di tampilkan ?
+                    </h5>
+                    <button
+                      type="button"
+                      className="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  {/* <div className="modal-body">...</div> */}
+                  <div className="modal-footer">
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Batalkan
+                    </button>
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                      onClick={this.onReservation}
+                    >
+                      Tampilkan
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
