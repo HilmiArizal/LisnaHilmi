@@ -71,7 +71,7 @@ class Reservation extends Component {
     }`;
 
     if (name && sentence && friend && reservation && session) {
-      window.open(url, "_blank").focus();
+      window.open(url, "_self").focus();
       this.onClearForm();
     } else {
       alert("Isi data dengan benar");

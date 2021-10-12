@@ -39,21 +39,30 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
+            .prevCard, .nextCard{
+                z-index: 2;
+                opacity: 0.6;
+                pointer-events: auto;
+                transition: 1s;
+            }
+
             .prevCard {
-                left: calc(0% + 2rem);
-                opacity: 0;
+                -webkit-transform: scale(0.8) translateY(-1rem) translateX(20rem);
+                transform: scale(0.8) translateY(-1rem) translateX(-20rem);
             }
 
             .activeCard {
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%, -50%);
+                z-index: 3;
+                -webkit-transform: scale(1) translateY(0) translateX(0);
+                transform: scale(1) translateY(0) translateX(0);
+                opacity: 1;
+                pointer-events: auto;
+                transition: 1s;
             }
 
             .nextCard {
-                left: 100%;
-                transform: translateX(calc(-100% - 2rem));
-                opacity: 0;
+                -webkit-transform: scale(0.8) translateY(-1rem) translateX(20rem);
+                transform: scale(0.8) translateY(-1rem) translateX(20rem);
             }
 
             .friend-name {
