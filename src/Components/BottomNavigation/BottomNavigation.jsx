@@ -44,7 +44,7 @@ export default function BottomNav() {
           component={Link}
           to="section-home"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass="active"
         />
         <BottomNavigationAction
@@ -54,7 +54,7 @@ export default function BottomNav() {
           component={Link}
           to="section-couple"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass="active"
 
         />
@@ -65,7 +65,7 @@ export default function BottomNav() {
           component={Link}
           to="section-event"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass="active"
         />
         <BottomNavigationAction
@@ -75,7 +75,7 @@ export default function BottomNav() {
           component={Link}
           to="section-gallery"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass="active"
         />
         <BottomNavigationAction
@@ -85,7 +85,7 @@ export default function BottomNav() {
           component={Link}
           to="section-reservation"
           spy={true}
-          smooth={true}
+          // smooth={true}
           activeClass="active"
         />
       </BottomNavigation>
