@@ -50,18 +50,11 @@ class Reservation extends Component {
     dataReservation.reservation = reservation;
     dataReservation.session = openSession ? session : "-";
 
-    if (!session) {
-      alert("Anda belum memilih sesi");
-    } else {
-      try {
-        const res = await Axios.post(
-          API_URL + "wish/postWish",
-          dataReservation
-        );
-        console.log(res.data);
-      } catch (err) {
-        console.log(err);
-      }
+    try {
+      const res = await Axios.post(API_URL + "wish/postWish", dataReservation);
+      console.log(res.data);
+    } catch (err) {
+      console.log(err);
     }
 
     let url = `http://wa.me/${

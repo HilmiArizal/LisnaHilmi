@@ -82,11 +82,11 @@ class Wish extends Component {
           <div className="product">
             &copy; 2021 Invitation by{" "}
             <a
-              href="https://hilmiarizal.github.io/PORTFOLIO-HILMI/hilmiarizal"
+              href="https://hilmiarizal.github.io/Portfolio/"
               target="_blank"
               rel="noreferrer"
             >
-              https://hilmiarizal.github.io/PORTFOLIO-HILMI/hilmiarizal
+              https://hilmiarizal.github.io/Portfolio/
             </a>
           </div>
         </div>
