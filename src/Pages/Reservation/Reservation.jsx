@@ -63,7 +63,7 @@ class Reservation extends Component {
       openSession ? session : "-"
     }`;
 
-    if (name && sentence && friend && reservation && session) {
+    if (name && sentence && friend && reservation) {
       window.open(url, "_self").focus();
       this.onClearForm();
     } else {

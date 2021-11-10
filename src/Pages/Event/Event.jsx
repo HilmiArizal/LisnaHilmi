@@ -14,7 +14,7 @@ class Event extends Component {
           <div className="akad">
             <div className="text">AKAD</div>
             <div className="date">5 DESEMBER 2021</div>
-            <div className="time">08:00 - 09:30</div>
+            <div className="time">09:00 - 10:00</div>
           </div>
           <div className="resepsi">
             <div className="text">RESEPSI</div>

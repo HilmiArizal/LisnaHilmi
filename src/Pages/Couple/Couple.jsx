@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Bismillah from "../../Assets/Images/bismillah.png";
-import AvatarMale from "../../Assets/Images/male.png";
-import AvatarFemale from "../../Assets/Images/female.png";
+import AvatarMale from "../../Assets/Images/Hilmi.png";
+import AvatarFemale from "../../Assets/Images/Lisna.png";
 import Flower from "../../Assets/Images/leaf-up.png";
 import Flower2 from "../../Assets/Images/leaf-down.png";
 import { FaHeart } from "react-icons/fa";
@@ -55,8 +55,8 @@ class Couple extends Component {
             <div className="salam">Assalamu'aikum Wr. Wb.</div>
             <div className="muqodimah">
               Atas nama Allah SWT yang Maha Pengasih dan Maha Penyayang, kami
-              dengan senang hati untuk mengundang anda dan berbagi kegembiraan
-              di pernikahan kami
+              dengan senang hati untuk mengundang anda dan berbagi kebahagiaan
+              di acara pernikahan kami
             </div>
           </div>
           <div className="couple-identity">
@@ -113,8 +113,8 @@ class Couple extends Component {
           <div className="wish">
             <div className="text">
               Merupakan suatu kehormatan dan kebahagian bagi kami apabila
-              Bapak/Ibu/Saudara/i berkenan hadir dan memberikan Doa restu kepada
-              kedua mempelai
+              Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu untuk
+              kami
             </div>
           </div>
           <div className="time">

@@ -1,40 +1,42 @@
+import Axios from "axios";
 import React, { Component } from "react";
-import Image1 from "../../Assets/Images/001.png";
-import Image2 from "../../Assets/Images/002.png";
-import Image3 from "../../Assets/Images/003.png";
+import { API_URL, API_URL_IMAGE } from "../../Service/API_URL";
 import "./Gallery.scss";
 
 class Gallery extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      dataPrewedding: [],
+    };
   }
+
+  componentDidMount() {
+    Axios.get(API_URL + `prewedding/getPrewedding`)
+      .then((res) => {
+        this.setState({ dataPrewedding: res.data.results });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
   render() {
     return (
       <div className="gallery">
         <div className="title">Gallery</div>
         <div className="row">
-          <div className="col-md-4">
-            <div className="card">
-              <div className="image">
-                <img src={Image1} alt="img-1" />
+          {this.state.dataPrewedding.map((item, index) => {
+            return (
+              <div className="col-md-4">
+                <div className="card">
+                  <div className="image">
+                    <img src={API_URL_IMAGE + item.image} alt="img-1" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card">
-              <div className="image">
-                <img src={Image2} alt="img-2" />
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card">
-              <div className="image">
-                <img src={Image3} alt="img-3" />
-              </div>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
     );

@@ -8,9 +8,10 @@
         font-size: 42px;
     }
     .row>* {
-        margin: 50px auto;
+        margin: 20px auto;
         .card{
-            width: 100%;
+            margin: auto;
+            width: 80%;
             min-height: 20vh;
             .image{
                 img{

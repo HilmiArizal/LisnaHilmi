@@ -1,6 +1,9 @@
 .detail-event {
-  padding: 2em;
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   .title  {
     text-align: center;
     font-family: "Rock Salt", cursive;
