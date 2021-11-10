@@ -1,33 +1,30 @@
 {
   "files": {
-    "main.css": "/lisnahilmi/static/css/main.c9a5fe3d.chunk.css",
-    "main.js": "/lisnahilmi/static/js/main.03082c96.chunk.js",
-    "main.js.map": "/lisnahilmi/static/js/main.03082c96.chunk.js.map",
+    "main.css": "/lisnahilmi/static/css/main.e35cc2b6.chunk.css",
+    "main.js": "/lisnahilmi/static/js/main.90240916.chunk.js",
+    "main.js.map": "/lisnahilmi/static/js/main.90240916.chunk.js.map",
     "runtime-main.js": "/lisnahilmi/static/js/runtime-main.6db4432a.js",
     "runtime-main.js.map": "/lisnahilmi/static/js/runtime-main.6db4432a.js.map",
-    "static/js/2.62d92fcc.chunk.js": "/lisnahilmi/static/js/2.62d92fcc.chunk.js",
-    "static/js/2.62d92fcc.chunk.js.map": "/lisnahilmi/static/js/2.62d92fcc.chunk.js.map",
+    "static/js/2.1d3f9929.chunk.js": "/lisnahilmi/static/js/2.1d3f9929.chunk.js",
+    "static/js/2.1d3f9929.chunk.js.map": "/lisnahilmi/static/js/2.1d3f9929.chunk.js.map",
     "static/js/3.519662a6.chunk.js": "/lisnahilmi/static/js/3.519662a6.chunk.js",
     "static/js/3.519662a6.chunk.js.map": "/lisnahilmi/static/js/3.519662a6.chunk.js.map",
     "index.html": "/lisnahilmi/index.html",
-    "static/css/main.c9a5fe3d.chunk.css.map": "/lisnahilmi/static/css/main.c9a5fe3d.chunk.css.map",
-    "static/js/2.62d92fcc.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.62d92fcc.chunk.js.LICENSE.txt",
-    "static/media/001.1eb60ae1.png": "/lisnahilmi/static/media/001.1eb60ae1.png",
-    "static/media/002.0b8bcd79.png": "/lisnahilmi/static/media/002.0b8bcd79.png",
-    "static/media/003.86132e7f.png": "/lisnahilmi/static/media/003.86132e7f.png",
+    "static/css/main.e35cc2b6.chunk.css.map": "/lisnahilmi/static/css/main.e35cc2b6.chunk.css.map",
+    "static/js/2.1d3f9929.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.1d3f9929.chunk.js.LICENSE.txt",
+    "static/media/Hilmi.6998ea3c.png": "/lisnahilmi/static/media/Hilmi.6998ea3c.png",
     "static/media/Its-you.5acc7696.mp3": "/lisnahilmi/static/media/Its-you.5acc7696.mp3",
+    "static/media/Lisna.b3ba284d.png": "/lisnahilmi/static/media/Lisna.b3ba284d.png",
     "static/media/App.scss": "/lisnahilmi/static/media/bg-wedding.767591cb.jpeg",
     "static/media/bismillah.686f82e4.png": "/lisnahilmi/static/media/bismillah.686f82e4.png",
-    "static/media/female.9691c5de.png": "/lisnahilmi/static/media/female.9691c5de.png",
-    "static/media/Home.scss": "/lisnahilmi/static/media/home.d2872587.jpeg",
+    "static/media/Home.scss": "/lisnahilmi/static/media/home.e092ad49.jpeg",
     "static/media/leaf-down.6d81b688.png": "/lisnahilmi/static/media/leaf-down.6d81b688.png",
-    "static/media/leaf-up.c41a0c17.png": "/lisnahilmi/static/media/leaf-up.c41a0c17.png",
-    "static/media/male.79670414.png": "/lisnahilmi/static/media/male.79670414.png"
+    "static/media/leaf-up.c41a0c17.png": "/lisnahilmi/static/media/leaf-up.c41a0c17.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6db4432a.js",
-    "static/js/2.62d92fcc.chunk.js",
-    "static/css/main.c9a5fe3d.chunk.css",
-    "static/js/main.03082c96.chunk.js"
+    "static/js/2.1d3f9929.chunk.js",
+    "static/css/main.e35cc2b6.chunk.css",
+    "static/js/main.90240916.chunk.js"
   ]
 }
