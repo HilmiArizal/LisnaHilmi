@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/lisnahilmi/static/css/main.e35cc2b6.chunk.css",
+    "main.css": "/lisnahilmi/static/css/main.57fa43d4.chunk.css",
     "main.js": "/lisnahilmi/static/js/main.e7b860a0.chunk.js",
     "main.js.map": "/lisnahilmi/static/js/main.e7b860a0.chunk.js.map",
     "runtime-main.js": "/lisnahilmi/static/js/runtime-main.6db4432a.js",
@@ -10,21 +10,21 @@
     "static/js/3.519662a6.chunk.js": "/lisnahilmi/static/js/3.519662a6.chunk.js",
     "static/js/3.519662a6.chunk.js.map": "/lisnahilmi/static/js/3.519662a6.chunk.js.map",
     "index.html": "/lisnahilmi/index.html",
-    "static/css/main.e35cc2b6.chunk.css.map": "/lisnahilmi/static/css/main.e35cc2b6.chunk.css.map",
+    "static/css/main.57fa43d4.chunk.css.map": "/lisnahilmi/static/css/main.57fa43d4.chunk.css.map",
     "static/js/2.1d3f9929.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.1d3f9929.chunk.js.LICENSE.txt",
     "static/media/Hilmi.6998ea3c.png": "/lisnahilmi/static/media/Hilmi.6998ea3c.png",
     "static/media/Its-you.5acc7696.mp3": "/lisnahilmi/static/media/Its-you.5acc7696.mp3",
     "static/media/Lisna.b3ba284d.png": "/lisnahilmi/static/media/Lisna.b3ba284d.png",
-    "static/media/App.scss": "/lisnahilmi/static/media/bg-wedding.767591cb.jpeg",
+    "static/media/App.scss": "/lisnahilmi/static/media/home.ea89797a.jpeg",
     "static/media/bismillah.686f82e4.png": "/lisnahilmi/static/media/bismillah.686f82e4.png",
-    "static/media/Home.scss": "/lisnahilmi/static/media/home.e092ad49.jpeg",
+    "static/media/Home.scss": "/lisnahilmi/static/media/cover.8f1ea42c.jpeg",
     "static/media/leaf-down.6d81b688.png": "/lisnahilmi/static/media/leaf-down.6d81b688.png",
     "static/media/leaf-up.c41a0c17.png": "/lisnahilmi/static/media/leaf-up.c41a0c17.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6db4432a.js",
     "static/js/2.1d3f9929.chunk.js",
-    "static/css/main.e35cc2b6.chunk.css",
+    "static/css/main.57fa43d4.chunk.css",
     "static/js/main.e7b860a0.chunk.js"
   ]
 }
