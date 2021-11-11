@@ -1,15 +1,15 @@
 .home {
-  background-image: url(../../Assets/Images/home.jpeg);
+  background-image: url(../../Assets/Images/cover.jpeg);
   height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: center -50px;
   position: relative;
   .text{
       font-family: 'Poppins', sans-serif;
       position: absolute;
       transform: translate(-50%, -50%);
-      top: 60%;
+      top: 70%;
       left: 50%;
       text-align: center;
       color: #fff;
