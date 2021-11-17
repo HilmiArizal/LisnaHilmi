@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/lisnahilmi/static/css/main.c7611268.chunk.css",
-    "main.js": "/lisnahilmi/static/js/main.2ae480bc.chunk.js",
-    "main.js.map": "/lisnahilmi/static/js/main.2ae480bc.chunk.js.map",
-    "runtime-main.js": "/lisnahilmi/static/js/runtime-main.b1a779af.js",
-    "runtime-main.js.map": "/lisnahilmi/static/js/runtime-main.b1a779af.js.map",
-    "static/js/2.56b11b6b.chunk.js": "/lisnahilmi/static/js/2.56b11b6b.chunk.js",
-    "static/js/2.56b11b6b.chunk.js.map": "/lisnahilmi/static/js/2.56b11b6b.chunk.js.map",
-    "static/js/3.23eca3f0.chunk.js": "/lisnahilmi/static/js/3.23eca3f0.chunk.js",
-    "static/js/3.23eca3f0.chunk.js.map": "/lisnahilmi/static/js/3.23eca3f0.chunk.js.map",
+    "main.css": "/lisnahilmi/static/css/main.f65f7a58.chunk.css",
+    "main.js": "/lisnahilmi/static/js/main.ea86b3ff.chunk.js",
+    "main.js.map": "/lisnahilmi/static/js/main.ea86b3ff.chunk.js.map",
+    "runtime-main.js": "/lisnahilmi/static/js/runtime-main.4704b070.js",
+    "runtime-main.js.map": "/lisnahilmi/static/js/runtime-main.4704b070.js.map",
+    "static/css/2.ae9e5f60.chunk.css": "/lisnahilmi/static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.f0f41cb0.chunk.js": "/lisnahilmi/static/js/2.f0f41cb0.chunk.js",
+    "static/js/2.f0f41cb0.chunk.js.map": "/lisnahilmi/static/js/2.f0f41cb0.chunk.js.map",
+    "static/js/3.0f55add8.chunk.js": "/lisnahilmi/static/js/3.0f55add8.chunk.js",
+    "static/js/3.0f55add8.chunk.js.map": "/lisnahilmi/static/js/3.0f55add8.chunk.js.map",
     "index.html": "/lisnahilmi/index.html",
-    "static/css/main.c7611268.chunk.css.map": "/lisnahilmi/static/css/main.c7611268.chunk.css.map",
-    "static/js/2.56b11b6b.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.56b11b6b.chunk.js.LICENSE.txt",
+    "static/css/2.ae9e5f60.chunk.css.map": "/lisnahilmi/static/css/2.ae9e5f60.chunk.css.map",
+    "static/css/main.f65f7a58.chunk.css.map": "/lisnahilmi/static/css/main.f65f7a58.chunk.css.map",
+    "static/js/2.f0f41cb0.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.f0f41cb0.chunk.js.LICENSE.txt",
     "static/media/HilmiArizal.4bcc7a4f.png": "/lisnahilmi/static/media/HilmiArizal.4bcc7a4f.png",
-    "static/media/Its-you.5acc7696.mp3": "/lisnahilmi/static/media/Its-you.5acc7696.mp3",
+    "static/media/Its-you.1dfa8702.mp3": "/lisnahilmi/static/media/Its-you.1dfa8702.mp3",
     "static/media/LisnaAstriani.39f423b4.png": "/lisnahilmi/static/media/LisnaAstriani.39f423b4.png",
+    "static/media/Teaser.a911a4fa.mp4": "/lisnahilmi/static/media/Teaser.a911a4fa.mp4",
     "static/media/App.scss": "/lisnahilmi/static/media/home.f8e0507e.png",
     "static/media/bismillah.686f82e4.png": "/lisnahilmi/static/media/bismillah.686f82e4.png",
     "static/media/Home.scss": "/lisnahilmi/static/media/cover.2a617775.png",
@@ -22,9 +25,10 @@
     "static/media/leaf-up.c41a0c17.png": "/lisnahilmi/static/media/leaf-up.c41a0c17.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1a779af.js",
-    "static/js/2.56b11b6b.chunk.js",
-    "static/css/main.c7611268.chunk.css",
-    "static/js/main.2ae480bc.chunk.js"
+    "static/js/runtime-main.4704b070.js",
+    "static/css/2.ae9e5f60.chunk.css",
+    "static/js/2.f0f41cb0.chunk.js",
+    "static/css/main.f65f7a58.chunk.css",
+    "static/js/main.ea86b3ff.chunk.js"
   ]
 }
