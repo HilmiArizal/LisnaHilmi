@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/lisnahilmi/static/css/main.f65f7a58.chunk.css",
-    "main.js": "/lisnahilmi/static/js/main.ea86b3ff.chunk.js",
-    "main.js.map": "/lisnahilmi/static/js/main.ea86b3ff.chunk.js.map",
+    "main.css": "/lisnahilmi/static/css/main.c0de3ac2.chunk.css",
+    "main.js": "/lisnahilmi/static/js/main.19df99af.chunk.js",
+    "main.js.map": "/lisnahilmi/static/js/main.19df99af.chunk.js.map",
     "runtime-main.js": "/lisnahilmi/static/js/runtime-main.4704b070.js",
     "runtime-main.js.map": "/lisnahilmi/static/js/runtime-main.4704b070.js.map",
     "static/css/2.ae9e5f60.chunk.css": "/lisnahilmi/static/css/2.ae9e5f60.chunk.css",
@@ -12,15 +12,15 @@
     "static/js/3.0f55add8.chunk.js.map": "/lisnahilmi/static/js/3.0f55add8.chunk.js.map",
     "index.html": "/lisnahilmi/index.html",
     "static/css/2.ae9e5f60.chunk.css.map": "/lisnahilmi/static/css/2.ae9e5f60.chunk.css.map",
-    "static/css/main.f65f7a58.chunk.css.map": "/lisnahilmi/static/css/main.f65f7a58.chunk.css.map",
+    "static/css/main.c0de3ac2.chunk.css.map": "/lisnahilmi/static/css/main.c0de3ac2.chunk.css.map",
     "static/js/2.f0f41cb0.chunk.js.LICENSE.txt": "/lisnahilmi/static/js/2.f0f41cb0.chunk.js.LICENSE.txt",
-    "static/media/HilmiArizal.4bcc7a4f.png": "/lisnahilmi/static/media/HilmiArizal.4bcc7a4f.png",
-    "static/media/Its-you.1dfa8702.mp3": "/lisnahilmi/static/media/Its-you.1dfa8702.mp3",
-    "static/media/LisnaAstriani.39f423b4.png": "/lisnahilmi/static/media/LisnaAstriani.39f423b4.png",
+    "static/media/Hilmi.1d1a1c40.png": "/lisnahilmi/static/media/Hilmi.1d1a1c40.png",
+    "static/media/Its-you.a73ba71f.mp3": "/lisnahilmi/static/media/Its-you.a73ba71f.mp3",
+    "static/media/Lisna.95d47704.png": "/lisnahilmi/static/media/Lisna.95d47704.png",
     "static/media/Teaser.a911a4fa.mp4": "/lisnahilmi/static/media/Teaser.a911a4fa.mp4",
-    "static/media/App.scss": "/lisnahilmi/static/media/home.f8e0507e.png",
+    "static/media/App.scss": "/lisnahilmi/static/media/cover.4e7fb9bb.png",
     "static/media/bismillah.686f82e4.png": "/lisnahilmi/static/media/bismillah.686f82e4.png",
-    "static/media/Home.scss": "/lisnahilmi/static/media/cover.2a617775.png",
+    "static/media/Home.scss": "/lisnahilmi/static/media/home.e31878c9.png",
     "static/media/leaf-down.6d81b688.png": "/lisnahilmi/static/media/leaf-down.6d81b688.png",
     "static/media/leaf-up.c41a0c17.png": "/lisnahilmi/static/media/leaf-up.c41a0c17.png"
   },
@@ -28,7 +28,7 @@
     "static/js/runtime-main.4704b070.js",
     "static/css/2.ae9e5f60.chunk.css",
     "static/js/2.f0f41cb0.chunk.js",
-    "static/css/main.f65f7a58.chunk.css",
-    "static/js/main.ea86b3ff.chunk.js"
+    "static/css/main.c0de3ac2.chunk.css",
+    "static/js/main.19df99af.chunk.js"
   ]
 }
