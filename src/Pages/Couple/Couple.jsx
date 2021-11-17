@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Bismillah from "../../Assets/Images/bismillah.png";
-import AvatarMale from "../../Assets/Images/Hilmi.png";
-import AvatarFemale from "../../Assets/Images/Lisna.png";
+import AvatarMale from "../../Assets/Images/HilmiArizal.png";
+import AvatarFemale from "../../Assets/Images/LisnaAstriani.png";
 import Flower from "../../Assets/Images/leaf-up.png";
 import Flower2 from "../../Assets/Images/leaf-down.png";
 import { FaHeart } from "react-icons/fa";

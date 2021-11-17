@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import BottomNavigation from "./Components/BottomNavigation/BottomNavigation";
+// import BottomNavigation from "./Components/BottomNavigation/BottomNavigation";
 import "./App.scss";
 import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
@@ -39,7 +39,7 @@ class App extends Component {
             <div className="audio">
               <Audio />
             </div>
-            <BottomNavigation />
+            {/* <BottomNavigation /> */}
           </div>
         </div>
       );
