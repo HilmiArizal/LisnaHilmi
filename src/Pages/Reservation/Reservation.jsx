@@ -191,53 +191,9 @@ class Reservation extends Component {
             )}
             <div
               className="btn btn-primary btn-sm"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal2"
+              onClick={this.onReservation}
             >
-              KIRIM SEKARANG
-            </div>
-            <div
-              className="modal fade"
-              id="exampleModal2"
-              tabIndex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div className="modal-dialog modal-dialog-centered">
-                <div className="modal-content">
-                  <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalLabel">
-                      Ucapan mu ingin di tampilkan ?
-                    </h5>
-                    <div
-                      type="button"
-                      className="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></div>
-                  </div>
-                  {/* <div className="modal-body">...</div> */}
-                  <div className="modal-footer">
-                    <div
-                      type="button"
-                      className="btn btn-primary"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    >
-                      Batalkan
-                    </div>
-                    <button
-                      type="button"
-                      className="btn btn-primary"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                      onClick={this.onReservation}
-                    >
-                      Tampilkan
-                    </button>
-                  </div>
-                </div>
-              </div>
+              KIRIM
             </div>
           </form>
         </div>

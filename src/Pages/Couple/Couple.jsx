@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Bismillah from "../../Assets/Images/bismillah.png";
-import AvatarMale from "../../Assets/Images/HilmiArizal.png";
-import AvatarFemale from "../../Assets/Images/LisnaAstriani.png";
+import AvatarMale from "../../Assets/Images/Hilmi.png";
+import AvatarFemale from "../../Assets/Images/Lisna.png";
 import Flower from "../../Assets/Images/leaf-up.png";
 import Flower2 from "../../Assets/Images/leaf-down.png";
 import { FaHeart } from "react-icons/fa";
@@ -61,15 +61,20 @@ class Couple extends Component {
               Assalamu'aikum Wr. Wb.
             </div>
             <div className="muqodimah" data-aos="fade-zoom">
-              Atas nama Allah SWT yang Maha Pengasih dan Maha Penyayang, kami
-              dengan senang hati untuk mengundang anda dan berbagi kebahagiaan
-              di acara pernikahan kami
+              Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+              pasangan-pasangan untukmu dari jenismu sendiri, agar kamu
+              cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di
+              antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu
+              benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang
+              berpikir.
+              <br />
+              <div style={{ fontWeight: "bold" }}>QS. Ar-Rum Ayat 21</div>
             </div>
           </div>
           <div className="couple-identity">
-            <div className="love" >
+            <div className="love">
               <div data-aos="zoom-in">
-              <FaHeart style={{ color: "#968984" }} />
+                <FaHeart style={{ color: "#968984" }} />
               </div>
             </div>
             <div className="row">
@@ -83,8 +88,8 @@ class Couple extends Component {
                       <div className="mother">Ibu Enung Tresnawati</div>
                     </div>
                   </div>
-                  <div className="image" >
-                    <img src={AvatarFemale} alt="img-avatar"/>
+                  <div className="image">
+                    <img src={AvatarFemale} alt="img-avatar" />
                   </div>
                 </div>
               </div>

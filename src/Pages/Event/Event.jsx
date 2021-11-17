@@ -9,16 +9,18 @@ class Event extends Component {
     this.state = {};
   }
 
-  componentDidMount(){
+  componentDidMount() {
     AOS.init({
-      duration: 2000
-    })
+      duration: 2000,
+    });
   }
 
   render() {
     return (
       <div className="detail-event">
-        <div className="title" data-aos="zoom-in">Detail Acara</div>
+        <div className="title" data-aos="zoom-in">
+          Detail Acara
+        </div>
         <div className="section-detail-event">
           <div className="akad" data-aos="zoom-out-right">
             <div className="text">AKAD</div>
@@ -33,11 +35,15 @@ class Event extends Component {
               <div>SESI 2 : 12.00 - 14.00</div>
             </div>
           </div>
-          <div className="place" data-aos="zoom-in">
-            <div className="text">HOTEL ENDAH PARAHYANGAN</div>
-            <div className="address">
-              Jl. Raya Cibeureum No.14, Campaka, Kec. Andir, Kota Bandung, Jawa
-              Barat 40184
+          <div className="place">
+            <div data-aos="zoom-in">
+              <div className="text">
+                HOTEL ENDAH PARAHYANGAN
+              </div>
+              <div className="address">
+                Jl. Raya Cibeureum No.14, Campaka, Kec. Andir, Kota Bandung,
+                Jawa Barat 40184
+              </div>
             </div>
             <div className="button">
               <button
