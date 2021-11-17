@@ -5,6 +5,7 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Audio from "./Components/Audio/Audio";
 import Cover from "./Components/Cover/Cover";
+import AOS from "aos";
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +13,10 @@ class App extends Component {
     this.state = {
       cover: false,
     };
+  }
+
+  componentDidMount(){
+    AOS.init();
   }
 
   changeCover = (cover) => {

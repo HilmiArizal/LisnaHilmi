@@ -17,8 +17,8 @@
 
         .icon-left {
             position: absolute;
-            left: 30%;
-            top: 50%;
+            left: 47%;
+            bottom: 0;
             transform: translate(-50%, -50%);
             font-size: 32px;
             cursor: pointer;
@@ -26,8 +26,8 @@
 
         .icon-right {
             position: absolute;
-            right: 27%;
-            top: 50%;
+            right: 43%;
+            bottom: 0;
             transform: translate(-50%, -50%);
             font-size: 32px;
             cursor: pointer;
@@ -66,10 +66,11 @@
                 text-align: center;
                 font-size: 28px;
                 font-weight: 500;
+                text-transform: capitalize;
             }
 
             .friend-wish {
-                margin-top: 20px;
+                margin-top: 10px;
                 text-align: center;
             }
 
@@ -126,6 +127,13 @@
             }
         }
     }
+
+
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: #b6afac !important;
+        border-color: #b6afac !important;
+        color: #111;
+    }
 }
 
 @media(max-width: 800px) {
@@ -134,8 +142,8 @@
 
             .icon-left {
                 position: absolute;
-                left: 10%;
-                top: 50%;
+                left: 40%;
+                bottom: 0;
                 transform: translate(-50%, -50%);
                 font-size: 32px;
                 cursor: pointer;
@@ -143,8 +151,8 @@
             
             .icon-right {
                 position: absolute;
-                right: 3%;
-                top: 50%;
+                right: 25%;
+                bottom: 0;
                 transform: translate(-50%, -50%);
                 font-size: 32px;
                 cursor: pointer;
@@ -165,6 +173,11 @@
                 display: flex;
                 justify-content: center;
             }
+
+            .product {
+                padding-bottom: 80px;
+            }
         }
     }
+
 }

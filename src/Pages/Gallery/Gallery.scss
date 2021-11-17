@@ -7,6 +7,17 @@
         font-weight: bold;
         font-size: 42px;
     }
+
+    .video{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        video{
+            width: 500px;
+            height: 250px;
+            
+        }
+    }
     .row>* {
         margin: 20px auto;
         .card{
@@ -21,4 +32,19 @@
             }
         }
     }
+}
+
+@media (max-width: 800px){
+   .gallery{
+    .video{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        video{
+            width: 350px;
+            height: 200px;
+            
+        }
+    }
+   }
 }

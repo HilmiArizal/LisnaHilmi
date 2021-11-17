@@ -5,6 +5,8 @@ import AvatarFemale from "../../Assets/Images/LisnaAstriani.png";
 import Flower from "../../Assets/Images/leaf-up.png";
 import Flower2 from "../../Assets/Images/leaf-down.png";
 import { FaHeart } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Couple.scss";
 
 class Couple extends Component {
@@ -20,6 +22,9 @@ class Couple extends Component {
 
   componentDidMount() {
     this.renderTimeEvent();
+    AOS.init({
+      duration: 1000,
+    });
   }
 
   renderTimeEvent = () => {
@@ -49,23 +54,27 @@ class Couple extends Component {
       <div className="couple">
         <div className="card">
           <div className="image-bismillah">
-            <img src={Bismillah} alt="img-bismillah" />
+            <img src={Bismillah} alt="img-bismillah" data-aos="fade-zoom" />
           </div>
           <div className="text-muqodimah">
-            <div className="salam">Assalamu'aikum Wr. Wb.</div>
-            <div className="muqodimah">
+            <div className="salam" data-aos="fade-zoom">
+              Assalamu'aikum Wr. Wb.
+            </div>
+            <div className="muqodimah" data-aos="fade-zoom">
               Atas nama Allah SWT yang Maha Pengasih dan Maha Penyayang, kami
               dengan senang hati untuk mengundang anda dan berbagi kebahagiaan
               di acara pernikahan kami
             </div>
           </div>
           <div className="couple-identity">
-            <div className="love">
+            <div className="love" >
+              <div data-aos="zoom-in">
               <FaHeart style={{ color: "#968984" }} />
+              </div>
             </div>
             <div className="row">
               <div className="col-md-6">
-                <div className="female">
+                <div className="female" data-aos="fade-down">
                   <div className="text">
                     <div className="name">Lisna Astriani, S.E., CTT</div>
                     <div className="as">Putri Tercinta</div>
@@ -74,13 +83,13 @@ class Couple extends Component {
                       <div className="mother">Ibu Enung Tresnawati</div>
                     </div>
                   </div>
-                  <div className="image">
-                    <img src={AvatarFemale} alt="img-avatar" />
+                  <div className="image" >
+                    <img src={AvatarFemale} alt="img-avatar"/>
                   </div>
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="male">
+                <div className="male" data-aos="fade-up">
                   <div className="image">
                     <img src={AvatarMale} alt="img-avatar" />
                   </div>
@@ -96,28 +105,28 @@ class Couple extends Component {
               </div>
             </div>
           </div>
-          <div className="flower">
+          <div className="flower" data-aos="fade-down">
             <div className="image">
               <img src={Flower} alt="img-flower" />
             </div>
           </div>
-          <div className="event">
+          <div className="event" data-aos="zoom-in">
             <div className="day">MINGGU</div>
             <div className="date">5 Desember 2021</div>
           </div>
-          <div className="flower">
+          <div className="flower" data-aos="fade-up">
             <div className="image-2">
               <img src={Flower2} alt="img-flower" />
             </div>
           </div>
           <div className="wish">
-            <div className="text">
+            <div className="text" data-aos="fade-zoom">
               Merupakan suatu kehormatan dan kebahagian bagi kami apabila
               Bapak/Ibu/Saudara/i berkenan hadir dan memberikan do'a restu untuk
               kami
             </div>
           </div>
-          <div className="time">
+          <div className="time" data-aos="flip-right">
             <div>
               {this.state.day} <span>Hari</span>
             </div>

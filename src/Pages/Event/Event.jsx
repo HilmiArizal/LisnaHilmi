@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Event.scss";
 
 class Event extends Component {
@@ -6,26 +8,32 @@ class Event extends Component {
     super(props);
     this.state = {};
   }
+
+  componentDidMount(){
+    AOS.init({
+      duration: 2000
+    })
+  }
+
   render() {
     return (
       <div className="detail-event">
-        <div className="title">Detail Acara</div>
+        <div className="title" data-aos="zoom-in">Detail Acara</div>
         <div className="section-detail-event">
-          <div className="akad">
+          <div className="akad" data-aos="zoom-out-right">
             <div className="text">AKAD</div>
             <div className="date">5 DESEMBER 2021</div>
             <div className="time">09:00 - 10:00</div>
           </div>
-          <div className="resepsi">
+          <div className="resepsi" data-aos="zoom-out-right">
             <div className="text">RESEPSI</div>
             <div className="date">5 DESEMBER 2021</div>
             <div className="sesi">
-              <div>SESI 1 : 10.00 - 11.00</div>
-              <div>SESI 2 : 11.00 - 12.00</div>
-              <div>SESI 3 : 12.00 - 13.00</div>
+              <div>SESI 1 : 10.00 - 12.00</div>
+              <div>SESI 2 : 12.00 - 14.00</div>
             </div>
           </div>
-          <div className="place">
+          <div className="place" data-aos="zoom-in">
             <div className="text">HOTEL ENDAH PARAHYANGAN</div>
             <div className="address">
               Jl. Raya Cibeureum No.14, Campaka, Kec. Andir, Kota Bandung, Jawa

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Reservation.scss";
 import Axios from "axios";
 import { API_URL } from "../../Service/API_URL";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class Reservation extends Component {
   constructor(props) {
@@ -14,6 +16,12 @@ class Reservation extends Component {
       session: "",
       openSession: false,
     };
+  }
+
+  componentDidMount() {
+    AOS.init({
+      duration: 2000,
+    });
   }
 
   onChangeReservation = (e) => {
@@ -57,14 +65,14 @@ class Reservation extends Component {
       console.log(err);
     }
 
-    let url = `http://wa.me/${
-      friend === "hilmi" ? "+6285156371589" : "+628987481821"
-    }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
-      openSession ? session : "-"
-    }`;
+    // let url = `http://wa.me/${
+    //   friend === "hilmi" ? "+6285156371589" : "+628987481821"
+    // }?text=Nama: ${name}%0aUcapan: ${sentence}%0aTeman dari: ${friend}%0aKehadiran: ${reservation}%0aSesi ke: ${
+    //   openSession ? session : "-"
+    // }`;
 
     if (name && sentence && friend && reservation) {
-      window.open(url, "_self").focus();
+      // window.open(url, "_self").focus();
       this.onClearForm();
     } else {
       alert("Isi data dengan benar");
@@ -86,7 +94,7 @@ class Reservation extends Component {
   render() {
     return (
       <div className="reservation">
-        <div className="title">Konfirmasi kehadiran</div>
+        <div className="title" data-aos="zoom-in">Konfirmasi kehadiran</div>
         <div className="card-form">
           <form
             className="form"
@@ -161,11 +169,10 @@ class Reservation extends Component {
                   onChange={(e) => this.setState({ session: e.target.value })}
                 >
                   <option selected hidden>
-                    1 / 2 / 3 ?
+                    1 / 2 ?
                   </option>
-                  <option value="1">Sesi 1 pukul 10:00 - 11:00</option>
-                  <option value="2">Sesi 2 pukul 11:00 - 12:00</option>
-                  <option value="3">Sesi 3 pukul 12:00 - 13:00</option>
+                  <option value="1">Sesi 1 pukul 10:00 - 12:00</option>
+                  <option value="2">Sesi 2 pukul 12:00 - 14:00</option>
                 </select>
               </div>
             ) : (
@@ -234,6 +241,10 @@ class Reservation extends Component {
             </div>
           </form>
         </div>
+
+        {/* <div className="wish">
+              <Wish/>
+        </div> */}
       </div>
     );
   }

@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./Wish.scss";
 import Axios from "axios";
 import { API_URL } from "../../Service/API_URL";
-import { GrPrevious, GrNext } from "react-icons/gr";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 class Wish extends Component {
   constructor(props) {
@@ -14,6 +15,9 @@ class Wish extends Component {
   }
 
   componentDidMount() {
+    AOS.init({
+      duration: 2000,
+    });
     Axios.get(API_URL + "wish/getWish")
       .then((res) => {
         this.setState({ dataWish: res.data.dataWish });
@@ -38,13 +42,17 @@ class Wish extends Component {
   render() {
     return (
       <div className="wish-pray">
-        <div className="title">Ucapan &amp; Do'a</div>
+        <div className="title" data-aos="zoom-in">
+          Ucapan &amp; Do'a
+        </div>
         <div className="wish-card">
           <div className="icon-left" onClick={this.onPrevious}>
-            <GrPrevious />
+            {/* <GrPrevious /> */}
+            <button className="btn btn-primary">Prev</button>
           </div>
           <div className="icon-right" onClick={this.onNext}>
-            <GrNext />
+            {/* <GrNext /> */}
+            <button className="btn btn-primary">Next</button>
           </div>
           <div className="content">
             {this.state.dataWish.map((item, index) => {
@@ -69,16 +77,32 @@ class Wish extends Component {
         </div>
         <div className="couple-forever">
           <div className="row">
-            <div className="and">&amp;</div>
-            <div className="col-md-6">
-              <div className="female">Lisna Astriani</div>
+            <div className="and">
+              <div data-aos="zoom-in">&amp;</div>
             </div>
             <div className="col-md-6">
-              <div className="male">Hilmi Arizal</div>
+              <div className="female">
+                Lisna Astriani
+                {/* <div data-aos="fade-right">Lisna Astriani</div> */}
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="male">
+                Hilmi Arizal
+                {/* <div data-aos="fade-left">Hilmi Arizal</div> */}
+              </div>
             </div>
           </div>
-          <div className="hashtag">#NaMiStory</div>
-          <div className="thankyou">Hatur Nuhun</div>
+          <div className="hashtag" data-aos="zoom-in">
+            #NaMiStory
+          </div>
+          <div
+            className="thankyou"
+            data-aos="zoom-in-up"
+            data-aos-duration="3000"
+          >
+            Hatur Nuhun
+          </div>
           <div className="product">
             &copy; 2021 Invitation by{" "}
             <a

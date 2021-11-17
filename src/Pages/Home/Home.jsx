@@ -4,6 +4,8 @@ import Event from "../Event/Event";
 import Gallery from "../Gallery/Gallery";
 import Reservation from "../Reservation/Reservation";
 import Wish from "../Wish/Wish";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.scss";
 
 class Home extends Component {
@@ -12,12 +14,18 @@ class Home extends Component {
     this.state = {};
   }
 
+  componentDidMount() {
+    AOS.init({ duration: 3000 });
+  }
+
   renderHome = () => {
     return (
       <div className="home">
         <div className="text">
-          <div className="name">Lisna <br/> &amp; <br/> Hilmi</div>
-          <div className="date">Minggu, 5 Desember 2021</div>
+          <div className="name" data-aos="zoom-in">
+            Lisna <br /> &amp; <br /> Hilmi
+          </div>
+          <div className="date" data-aos="zoom-out">Minggu, 5 Desember 2021</div>
         </div>
       </div>
     );
@@ -36,15 +44,15 @@ class Home extends Component {
         </div>
 
         <div id="section-gallery">
-          <Gallery/>
+          <Gallery />
         </div>
 
         <div id="section-reservation">
-          <Reservation/>
+          <Reservation />
         </div>
 
         <div id="section-reservation">
-          <Wish/>
+          <Wish />
         </div>
       </div>
     );
