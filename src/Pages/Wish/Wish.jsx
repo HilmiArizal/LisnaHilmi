@@ -101,7 +101,7 @@ class Wish extends Component {
             data-aos="zoom-in-up"
             data-aos-duration="3000"
           >
-            Hatur Nuhun
+            
           </div>
           <div className="product">
             &copy; 2021 Invitation by{" "}

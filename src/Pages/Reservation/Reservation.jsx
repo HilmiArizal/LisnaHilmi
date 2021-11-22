@@ -42,28 +42,16 @@ class Reservation extends Component {
 
   onReservation = async (e) => {
     e.preventDefault();
-    const {
-      name,
-      sentence,
-      friend,
-      reservation,
-      session,
-      openSession,
-    } = this.state;
+    const { name, sentence, friend, reservation, session } = this.state;
 
     const dataReservation = Object();
     dataReservation.name = name;
     dataReservation.wish = sentence;
-    dataReservation.friend = friend;
+    dataReservation.friend = friend === "" ? "1" : friend;
     dataReservation.reservation = reservation;
-    dataReservation.session = openSession ? session : "-";
+    dataReservation.session = session ? session : "-";
 
-    try {
-      const res = await Axios.post(API_URL + "wish/postWish", dataReservation);
-      console.log(res.data);
-    } catch (err) {
-      console.log(err);
-    }
+    console.log(dataReservation);
 
     // let url = `http://wa.me/${
     //   friend === "hilmi" ? "+6285156371589" : "+628987481821"
@@ -71,9 +59,16 @@ class Reservation extends Component {
     //   openSession ? session : "-"
     // }`;
 
-    if (name && sentence && friend && reservation) {
-      // window.open(url, "_self").focus();
-      this.onClearForm();
+    if (name && sentence && reservation) {
+      try {
+        await Axios.post(API_URL + "wish/postWish", dataReservation);
+        alert("Berhasil terkirim!");
+        this.onClearForm();
+        window.location.reload();
+        // console.log(res.data);
+      } catch (err) {
+        // console.log(err);
+      }
     } else {
       alert("Isi data dengan benar");
     }
@@ -94,7 +89,9 @@ class Reservation extends Component {
   render() {
     return (
       <div className="reservation">
-        <div className="title" data-aos="zoom-in">Konfirmasi kehadiran</div>
+        <div className="title" data-aos="zoom-in">
+          Konfirmasi kehadiran
+        </div>
         <div className="card-form">
           <form
             className="form"
@@ -117,20 +114,6 @@ class Reservation extends Component {
                 rows="3"
                 onChange={(e) => this.setState({ sentence: e.target.value })}
               ></textarea>
-            </div>
-            <div className="mb-3">
-              <label>Teman dari :</label>
-              <select
-                className="form-control form-control-sm"
-                onChange={(e) => this.setState({ friend: e.target.value })}
-                defaultValue={"default"}
-              >
-                <option disabled hidden value="default">
-                  Lisna / Hilmi ?
-                </option>
-                <option value="lisna">Lisna</option>
-                <option value="hilmi">Hilmi</option>
-              </select>
             </div>
             <div className="mb-3">
               <label>Kehadiran :</label>
@@ -161,6 +144,21 @@ class Reservation extends Component {
                 </div>
               </div>
             </div>
+            <div className="mb-3">
+              <label>Jumlah kehadiran :</label>
+              <select
+                className="form-control form-control-sm"
+                onChange={(e) => this.setState({ friend: e.target.value })}
+                defaultValue={"default"}
+              >
+                <option disabled hidden value="default">
+                  1
+                </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
             {this.state.openSession ? (
               <div className="mb-3">
                 <label>Sesi ke :</label>
@@ -184,7 +182,7 @@ class Reservation extends Component {
                   defaultValue={"default"}
                 >
                   <option hidden disabled value="default">
-                    -
+                    Pilih kehadiran!
                   </option>
                 </select>
               </div>
