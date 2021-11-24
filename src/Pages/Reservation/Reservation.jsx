@@ -61,10 +61,14 @@ class Reservation extends Component {
 
     if (name && sentence && reservation) {
       try {
-        await Axios.post(API_URL + "wish/postWish", dataReservation);
-        alert("Berhasil terkirim!");
-        this.onClearForm();
-        window.location.reload();
+        if (session === "") {
+          alert("Harap isi sesi terlebih dahulu!");
+        } else {
+          await Axios.post(API_URL + "wish/postWish", dataReservation);
+          alert("Berhasil terkirim!");
+          this.onClearForm();
+          window.location.reload();
+        }
         // console.log(res.data);
       } catch (err) {
         // console.log(err);
@@ -156,7 +160,7 @@ class Reservation extends Component {
                 </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="3">3</option>
+                <option value="3"> Lebih dari 3</option>
               </select>
             </div>
             {this.state.openSession ? (
@@ -167,10 +171,11 @@ class Reservation extends Component {
                   onChange={(e) => this.setState({ session: e.target.value })}
                 >
                   <option selected hidden>
-                    1 / 2 ?
+                    Silahkan pilih sesi
                   </option>
-                  <option value="1">Sesi 1 pukul 10:00 - 12:00</option>
-                  <option value="2">Sesi 2 pukul 12:00 - 14:00</option>
+                  <option value="1">Sesi 1 pukul 11:00 - 12:00</option>
+                  <option value="2">Sesi 2 pukul 12:00 - 13:00</option>
+                  <option value="3">Sesi 3 pukul 13:00 - 14:00</option>
                 </select>
               </div>
             ) : (
@@ -182,7 +187,7 @@ class Reservation extends Component {
                   defaultValue={"default"}
                 >
                   <option hidden disabled value="default">
-                    Pilih kehadiran!
+                    Pilih kehadiran terlebih dahulu!
                   </option>
                 </select>
               </div>
