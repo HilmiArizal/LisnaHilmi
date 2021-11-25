@@ -7,6 +7,7 @@ import Wish from "../Wish/Wish";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Home.scss";
+import Protokol from "../Protokol/Protokol";
 
 class Home extends Component {
   constructor(props) {
@@ -25,7 +26,9 @@ class Home extends Component {
           <div className="name" data-aos="zoom-in">
             Lisna <br /> &amp; <br /> Hilmi
           </div>
-          <div className="date" data-aos="zoom-out">Minggu, 5 Desember 2021</div>
+          <div className="date" data-aos="zoom-out">
+            Minggu, 5 Desember 2021
+          </div>
         </div>
       </div>
     );
@@ -41,6 +44,10 @@ class Home extends Component {
 
         <div id="section-event">
           <Event />
+        </div>
+
+        <div id="section-protokol">
+          <Protokol />
         </div>
 
         <div id="section-gallery">

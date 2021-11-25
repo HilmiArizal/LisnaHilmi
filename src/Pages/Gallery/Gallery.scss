@@ -9,10 +9,13 @@
     }
 
     .video{
-        margin-top: 20px;
+        margin: 25px;
         display: flex;
         justify-content: center;
         video{
+            padding: 1em;
+            border-radius: 5px;
+            border: 1px solid #968984;
             width: 500px;
             height: 250px;
             
