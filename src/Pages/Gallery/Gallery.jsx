@@ -18,8 +18,9 @@ class Gallery extends Component {
     AOS.init({
       duration: 2000,
     });
-    Axios.get(API_URL + `prewedding/getPrewedding`)
+    Axios.get(API_URL + `prewedding/getHideShowPrewedding`, { status: "show" })
       .then((res) => {
+        console.log(res.data);
         this.setState({ dataPrewedding: res.data.results });
       })
       .catch((err) => {
