@@ -42,7 +42,7 @@ class Gallery extends Component {
         <div className="row">
           {this.state.dataPrewedding.map((item, index) => {
             return (
-              <div className="col-md-4">
+              <div className="col-md-4" key={index}>
                 <div className="card" data-aos="fade-right">
                   <div className="image">
                     <img src={API_URL_IMAGE + item.image} alt="img-1" />
