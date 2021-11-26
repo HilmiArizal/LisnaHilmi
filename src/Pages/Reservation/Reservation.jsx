@@ -15,6 +15,8 @@ class Reservation extends Component {
       reservation: "",
       session: "",
       openSession: false,
+
+      isLoading: false,
     };
   }
 
@@ -42,6 +44,7 @@ class Reservation extends Component {
 
   onReservation = async (e) => {
     e.preventDefault();
+    this.setState({ isLoading: true });
     const { name, sentence, friend, reservation, session } = this.state;
 
     const dataReservation = Object();
@@ -64,12 +67,17 @@ class Reservation extends Component {
         if (session === "") {
           alert("Harap isi sesi terlebih dahulu!");
         } else {
-          await Axios.post(API_URL + "wish/postWish", dataReservation);
-          alert("Berhasil terkirim!");
-          this.onClearForm();
-          window.location.reload();
+          const res = await Axios.post(
+            API_URL + "wish/postWish",
+            dataReservation
+          );
+          if (res.status === 200) {
+            this.setState({ isLoading: false });
+            alert("Berhasil terkirim!");
+            this.onClearForm();
+            window.location.reload();
+          }
         }
-        // console.log(res.data);
       } catch (err) {
         // console.log(err);
       }
@@ -192,18 +200,20 @@ class Reservation extends Component {
                 </select>
               </div>
             )}
-            <div
-              className="btn btn-primary btn-sm"
-              onClick={this.onReservation}
-            >
-              KIRIM
-            </div>
+            {this.state.isLoading ? (
+              <button class="btn btn-primary btn-sm" style={{cursor: 'none'}}>
+                <i class="fa fa-spinner fa-spin"></i>
+              </button>
+            ) : (
+              <div
+                className="btn btn-primary btn-sm"
+                onClick={this.onReservation}
+              >
+                KIRIM
+              </div>
+            )}
           </form>
         </div>
-
-        {/* <div className="wish">
-              <Wish/>
-        </div> */}
       </div>
     );
   }
