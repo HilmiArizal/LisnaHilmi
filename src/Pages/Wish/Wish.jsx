@@ -96,6 +96,7 @@ class Wish extends Component {
           <div className="hashtag" data-aos="zoom-in">
             #NaMiStory
           </div>
+
           <div
             className="thankyou"
             data-aos="zoom-in-up"

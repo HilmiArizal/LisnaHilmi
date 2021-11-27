@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsFillMicMuteFill, BsMusicNoteBeamed } from "react-icons/bs";
 import AudioFile from "../../Assets/Audio/Its-you.mp3";
+// import EasyOnMe from "../../Assets/Audio/easy-on-me.mp3";
 import "./Audio.scss";
 
 export default function AudioMusic() {

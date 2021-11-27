@@ -2,6 +2,7 @@ import Axios from "axios";
 import React, { Component } from "react";
 import { API_URL, API_URL_IMAGE } from "../../Service/API_URL";
 import VideoTeaser from "../../Assets/Video/Teaser.mp4";
+import PosterTeaser from "../../Assets/Images/Poster.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Gallery.scss";
@@ -35,7 +36,7 @@ class Gallery extends Component {
           Galeri
         </div>
         <div className="video">
-          <video controls>
+          <video controls poster={PosterTeaser}>
             <source src={VideoTeaser} type="video/mp4" />
           </video>
         </div>

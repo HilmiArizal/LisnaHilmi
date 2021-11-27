@@ -65,6 +65,7 @@ class Reservation extends Component {
     if (name && sentence && reservation) {
       try {
         if (session === "") {
+          this.setState({ isLoading: false });
           alert("Harap isi sesi terlebih dahulu!");
         } else {
           const res = await Axios.post(
@@ -82,7 +83,10 @@ class Reservation extends Component {
         // console.log(err);
       }
     } else {
-      alert("Isi data dengan benar");
+      setTimeout(() => {
+        this.setState({ isLoading: false });
+        alert("Isi data dengan benar");
+      }, 500);
     }
   };
 
@@ -181,7 +185,9 @@ class Reservation extends Component {
                   <option selected hidden>
                     Silahkan pilih sesi
                   </option>
-                  <option value="1" disabled>Sesi 1 pukul 11:00 - 12:00</option>
+                  <option value="1" disabled>
+                    Sesi 1 pukul 11:00 - 12:00
+                  </option>
                   <option value="2">Sesi 2 pukul 12:00 - 13:00</option>
                   <option value="3">Sesi 3 pukul 13:00 - 14:00</option>
                 </select>
@@ -201,7 +207,7 @@ class Reservation extends Component {
               </div>
             )}
             {this.state.isLoading ? (
-              <button class="btn btn-primary btn-sm" style={{cursor: 'none'}}>
+              <button class="btn btn-primary btn-sm" style={{ cursor: "none" }}>
                 <i class="fa fa-spinner fa-spin"></i>
               </button>
             ) : (

@@ -16,10 +16,11 @@
 
     .row>* {
         margin: 20px auto;
+        width: 50%;
 
         .card {
             border-color: #968984;
-            width: 180px;
+            width: 150px;
             background-color: #968984;
             margin: auto;
 
@@ -35,7 +36,7 @@
             .title {
                 margin-top: 10px;
                 text-align: center;
-                font-size: 15px;
+                font-size: 14px;
                 text-transform: uppercase;
             }
         }

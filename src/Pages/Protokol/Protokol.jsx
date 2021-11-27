@@ -43,7 +43,7 @@ class Protokol extends Component {
         <div className="row">
           {this.state.dataProtokol.map((item, index) => {
             return (
-              <div className="col-md-3" key={index}>
+              <div className="col-md" key={index}>
                 <div className="card">
                   <div className="image">
                     <img src={item.image} alt="img-1" />
