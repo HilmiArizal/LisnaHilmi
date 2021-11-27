@@ -172,7 +172,7 @@ class Reservation extends Component {
                 </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-                <option value="3"> Lebih dari 3</option>
+                <option value="3"> Lebih dari 2</option>
               </select>
             </div>
             {this.state.openSession ? (
@@ -186,7 +186,7 @@ class Reservation extends Component {
                     Silahkan pilih sesi
                   </option>
                   <option value="1" disabled>
-                    Sesi 1 pukul 11:00 - 12:00
+                    Sesi 1 pukul 11:00 - 12:00 (Full)
                   </option>
                   <option value="2">Sesi 2 pukul 12:00 - 13:00</option>
                   <option value="3">Sesi 3 pukul 13:00 - 14:00</option>
